@@ -24,7 +24,7 @@ public class Page {
     private Workspace workspace;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_parent", nullable = true)
+    @JoinColumn(name = "id_parent")
     private Page parent;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -42,7 +42,7 @@ public class Page {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    @Column(columnDefinition = "TIMESTAMP", nullable = true)
+    @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime deletedAt;
 
     public PageModel getModel() {
