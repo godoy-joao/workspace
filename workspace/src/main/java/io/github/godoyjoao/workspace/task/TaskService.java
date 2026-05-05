@@ -1,6 +1,5 @@
 package io.github.godoyjoao.workspace.task;
 
-import io.github.godoyjoao.workspace.exception.TenantViolationException;
 import io.github.godoyjoao.workspace.task.dto.CreateTask;
 import io.github.godoyjoao.workspace.workspace.Workspace;
 import io.github.godoyjoao.workspace.workspace.WorkspaceService;

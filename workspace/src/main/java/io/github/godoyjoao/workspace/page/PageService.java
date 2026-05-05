@@ -1,6 +1,5 @@
 package io.github.godoyjoao.workspace.page;
 
-import io.github.godoyjoao.workspace.exception.TenantViolationException;
 import io.github.godoyjoao.workspace.identity.User;
 import io.github.godoyjoao.workspace.page.dto.CreatePage;
 import io.github.godoyjoao.workspace.page.dto.PageView;
