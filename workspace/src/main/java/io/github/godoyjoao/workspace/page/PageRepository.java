@@ -14,7 +14,7 @@ public interface PageRepository extends JpaRepository<Page, UUID> {
     List<Page> findByWorkspace(Workspace workspace);
 
     /**
-     * @param workspace
+     * @param workspace tenant for this query
      * @return Root pages for the provided workspace
      */
     @Query("""
@@ -28,8 +28,8 @@ public interface PageRepository extends JpaRepository<Page, UUID> {
 
     /**
      *
-     * @param workspace
-     * @param parent
+     * @param workspace tenant for this query
+     * @param parent page element to find children
      * @return children for provided parent page
      */
     @Query("""
